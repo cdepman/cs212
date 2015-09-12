@@ -24,11 +24,9 @@ func generateArray() -> [Int?] {
 let array1 = generateArray()
 func countNils(array: [Int?]) -> Int {
     var count = 0
-
     for i in array {
         if i == nil { count++ }
     }
-
     return count
 }
 // Question 2: Mean
@@ -39,13 +37,11 @@ func countNils(array: [Int?]) -> Int {
 let array2 = generateArray()
 func findMeanOfArray(array: [Int?]) -> Int{
     var total = 0
-
     for (var i = 0; i < array.count; i++) {
         if let value = array[i] {
             total += value
         }
     }
-
     return total / array.count
 }
 // Question 3: New Array
@@ -57,13 +53,11 @@ let array3 = generateArray()
 
 func removeNils(array: [Int?]) -> [Int]{
     var cleanArray = [Int]()
-
     for i in 0...(array.count - 1) {
         if let value = array[i] {
             cleanArray.append(value)
         }
     }
-
     return cleanArray
 }
 
@@ -81,7 +75,6 @@ func merge(left: [Int], right: [Int]) -> [Int] {
     var leftCount = left.count
     var rightIndex = 0
     var leftIndex = 0
-
     while rightIndex < rightCount && leftIndex < leftCount {
         var leftval: Int = left[leftIndex]
         var rightval: Int = right[rightIndex]
@@ -93,15 +86,14 @@ func merge(left: [Int], right: [Int]) -> [Int] {
             rightIndex++
         }
     }
-    
-    sorted += left[leftIndex..<leftCount] + right[rightIndex..<rightCount]
+    sorted += left[leftIndex..<left.count] + right[rightIndex..<right.count]
     return sorted
 }
 
 func mergeSort(array: [Int]) -> [Int] {
     if array.count == 1 {
         return array
-    }
+    }   
     var midPoint = array.count/2
     var left = Array(array[0..<midPoint])
     var right = Array(array[midPoint..<(array.count)])

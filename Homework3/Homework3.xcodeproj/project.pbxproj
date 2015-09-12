@@ -409,6 +409,7 @@
 				4DAADBE01A75940E00529994 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DAADBE11A75940E00529994 /* Build configuration list for PBXNativeTarget "Homework3Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				4DAADBE31A75940E00529994 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -40,7 +40,17 @@ class ViewController: UIViewController {
     
     func bumpUpTheCount() {
         count++
-        label.text = "\(count)"
+        label.font = UIFont.systemFontOfSize(60)
+        if count % 15 == 0 {
+            label.text = "fizzbuzz"
+        } else if count % 3 == 0 {
+            label.text = "fizz"
+        } else if count % 5 == 0 {
+            label.text = "buzz"
+        } else {
+            label.font = UIFont.systemFontOfSize(120)
+            label.text = "\(count)"
+        }
     }
     
     func printClick() {
