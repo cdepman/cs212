@@ -33,4 +33,4 @@ DerivedData
 Carthage/Build
 
 *.zip
-*.DS_Store
+.DS_Store
