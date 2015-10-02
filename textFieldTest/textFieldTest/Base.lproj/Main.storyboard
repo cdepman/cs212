@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="textFieldTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpJ-6I-Ft5">
+                                <rect key="frame" x="282" y="337" width="37" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearTextField" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SZc-eC-V5C"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8y-NO-Eyu">
+                                <rect key="frame" x="535" y="284" width="51" height="31"/>
+                            </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQj-G5-KWf">
+                                <rect key="frame" x="16" y="285" width="505" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                <connections>
+                                    <action selector="userInputText" destination="vXZ-lx-hvc" eventType="touchDown" id="d1s-no-vSR"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.58906614976969884" blue="0.41315941237630255" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="l8y-NO-Eyu" secondAttribute="centerY" id="AIR-kL-nNL"/>
+                            <constraint firstAttribute="centerY" secondItem="cQj-G5-KWf" secondAttribute="centerY" id="BYM-9G-myO"/>
+                            <constraint firstItem="l8y-NO-Eyu" firstAttribute="leading" secondItem="cQj-G5-KWf" secondAttribute="trailing" constant="14" id="MGF-p0-ebv"/>
+                            <constraint firstItem="NpJ-6I-Ft5" firstAttribute="top" secondItem="cQj-G5-KWf" secondAttribute="bottom" constant="22" id="P8x-wU-BeZ"/>
+                            <constraint firstItem="cQj-G5-KWf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WUe-u3-Gbf"/>
+                            <constraint firstAttribute="centerX" secondItem="NpJ-6I-Ft5" secondAttribute="centerX" id="gqc-9m-G2F"/>
+                            <constraint firstItem="l8y-NO-Eyu" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="kQr-La-LDQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="cQj-G5-KWf" id="fT4-QU-Cki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

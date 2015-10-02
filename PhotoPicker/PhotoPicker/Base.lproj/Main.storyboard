@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PhotoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fab-39-fjf">
+                                <rect key="frame" x="252" y="285" width="98" height="30"/>
+                                <state key="normal" title="Named Segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentTestUsingNamedSegue" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oVc-wc-9FM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUC-a5-aJm">
+                                <rect key="frame" x="244" y="323" width="112" height="30"/>
+                                <state key="normal" title="Triggered Segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ft5-Mz-sQY" kind="presentation" identifier="Triggered" modalTransitionStyle="flipHorizontal" id="Dd1-J8-lXb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5j-A0-L6H">
+                                <rect key="frame" x="271" y="247" width="59" height="30"/>
+                                <state key="normal" title="All Code">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentTestUsingAllCode" destination="vXZ-lx-hvc" eventType="touchUpInside" id="STn-6N-fXG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="h5j-A0-L6H" secondAttribute="centerX" id="9uL-Ws-VNV"/>
+                            <constraint firstAttribute="centerX" secondItem="rUC-a5-aJm" secondAttribute="centerX" id="EuZ-Jv-l9d"/>
+                            <constraint firstItem="rUC-a5-aJm" firstAttribute="top" secondItem="fab-39-fjf" secondAttribute="bottom" constant="10" id="IhE-wh-Sjc"/>
+                            <constraint firstAttribute="centerX" secondItem="fab-39-fjf" secondAttribute="centerX" id="h5Q-3E-ndI"/>
+                            <constraint firstItem="fab-39-fjf" firstAttribute="top" secondItem="h5j-A0-L6H" secondAttribute="bottom" constant="10" id="obY-VH-4MI"/>
+                            <constraint firstAttribute="centerY" secondItem="fab-39-fjf" secondAttribute="centerY" id="zPE-7B-0RZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerButton" destination="fab-39-fjf" id="ZLZ-gC-A0D"/>
+                        <segue destination="ft5-Mz-sQY" kind="presentation" identifier="PresentTest" modalTransitionStyle="partialCurl" id="EfF-8N-E8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="432"/>
+        </scene>
+        <!--Test Modal View Controller-->
+        <scene sceneID="tWe-7W-Pv3">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="ft5-Mz-sQY" customClass="TestModalViewController" customModule="PhotoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Wm-8H-lkV"/>
+                        <viewControllerLayoutGuide type="bottom" id="F3t-Im-u3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ox-aH-eZi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-uC-AkN">
+                                <rect key="frame" x="237" y="285" width="128" height="30"/>
+                                <state key="normal" title="Get me outta here!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissSelf" destination="ft5-Mz-sQY" eventType="touchUpInside" id="ASB-LW-gvT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-cE-dac">
+                                <rect key="frame" x="279" y="175" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Dx6-uC-AkN" secondAttribute="centerY" id="07W-JR-WBt"/>
+                            <constraint firstAttribute="centerX" secondItem="Dx6-uC-AkN" secondAttribute="centerX" id="2D7-Bh-wZS"/>
+                            <constraint firstItem="rUv-cE-dac" firstAttribute="top" secondItem="1Wm-8H-lkV" secondAttribute="bottom" constant="155" id="4xA-Gz-q1F"/>
+                            <constraint firstAttribute="centerX" secondItem="rUv-cE-dac" secondAttribute="centerX" id="eoU-Ig-QNt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="techniqueLabel" destination="rUv-cE-dac" id="bef-cY-vI1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KM0-JA-knK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="500"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dd1-J8-lXb"/>
+    </inferredMetricsTieBreakers>
+</document>
