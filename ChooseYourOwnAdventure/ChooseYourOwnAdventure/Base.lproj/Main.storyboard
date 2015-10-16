@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z4H-cY-n8w">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Znc-8v-wvc">
+            <objects>
+                <navigationController id="z4H-cY-n8w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xjc-w1-77k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="vXa-N5-wlk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziK-ta-NtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="537"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="At a concert, the lead singer picks you out of the crowd and asks you to come on stage." translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-Rs-iRa">
+                                <rect key="frame" x="154" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-Si-Zay">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="816-SO-dmN" kind="show" id="LVd-2g-naj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDu-Oh-yyf">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jIL-99-SQr" kind="show" id="W6U-S6-Aq9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pJ8-Rs-iRa" secondAttribute="centerX" id="8Cy-or-HRV"/>
+                            <constraint firstAttribute="centerX" secondItem="CDu-Oh-yyf" secondAttribute="centerX" id="e8l-dK-Q1J"/>
+                            <constraint firstAttribute="centerX" secondItem="h4Y-Si-Zay" secondAttribute="centerX" id="nne-2u-T6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cdV-Nz-PJ6">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="537"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="35p-Qm-9bG">
+            <objects>
+                <viewController id="816-SO-dmN" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uh8-bu-hFz"/>
+                        <viewControllerLayoutGuide type="bottom" id="qsD-QN-hRc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="45h-6z-bNN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YrC-B2-ZlT">
+                                <rect key="frame" x="154" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You approach the stage and some other concert-goers help you up while the bass player gives you a hand up. The lead singer waves you over and holds out the microphone to you. Do you take it?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKu-E2-5ID">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVt-Lj-biT">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YrC-B2-ZlT" secondAttribute="centerX" id="DeM-Y0-Yp9"/>
+                            <constraint firstAttribute="centerX" secondItem="MVt-Lj-biT" secondAttribute="centerX" id="fac-69-gUd"/>
+                            <constraint firstAttribute="centerX" secondItem="qKu-E2-5ID" secondAttribute="centerX" id="lcB-pr-faN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGS-zc-okP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="-534"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="4Q7-G6-X28">
+            <objects>
+                <viewController id="jIL-99-SQr" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1R8-0g-x7j"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fmw-hs-Jty"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gCb-v4-7ww">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-k5-mhh">
+                                <rect key="frame" x="154" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You try to hide in the crowd but the people around you know the singer is pointing at you. They start cheering you on. As you back away, the crowd around you starts lifting you up. Fight back?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVj-BE-7Gz">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="htc-Ph-aTN" kind="show" id="iTr-YY-Cmg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-IE-QVO">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="V4V-pN-u5A" kind="show" id="vHq-Ny-h9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="UFO-IE-QVO" secondAttribute="centerX" id="6nA-G6-455"/>
+                            <constraint firstAttribute="centerX" secondItem="hhL-k5-mhh" secondAttribute="centerX" id="WQN-Tt-j9t"/>
+                            <constraint firstAttribute="centerX" secondItem="gVj-BE-7Gz" secondAttribute="centerX" id="XpK-uE-8DY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gTg-rW-NI3">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4X-Z8-i2e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="1081"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="9Z1-mg-ZhI">
+            <objects>
+                <viewController id="htc-Ph-aTN" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WJa-iI-OpH"/>
+                        <viewControllerLayoutGuide type="bottom" id="hj1-tV-87B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vBf-Eg-QNk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ow-CN-zWw">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ei-AX-yoH">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You try to fight people off, they get pissed off, a brawl breaks out, you get ejected from the concert. Well done!" translatesAutoresizingMaskIntoConstraints="NO" id="Ce9-F2-ZYs">
+                                <rect key="frame" x="154" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0Ei-AX-yoH" secondAttribute="centerX" id="4CK-Do-sNE"/>
+                            <constraint firstAttribute="centerX" secondItem="Ce9-F2-ZYs" secondAttribute="centerX" id="rgP-yk-UNg"/>
+                            <constraint firstAttribute="centerX" secondItem="2Ow-CN-zWw" secondAttribute="centerX" id="yFi-Uo-ijC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qy2-29-feJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2984" y="554"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="aW2-0h-M5c">
+            <objects>
+                <viewController id="V4V-pN-u5A" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aVe-47-rT4"/>
+                        <viewControllerLayoutGuide type="bottom" id="UMj-Or-ir6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1kx-Uf-Cnc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyO-rg-Owx">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3eO-gP-zNf" kind="show" id="3ik-IE-Vxi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3u-NY-Ayy">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="35X-Y0-ffq" kind="show" id="GAX-pI-KoG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NUO-UX-bVZ">
+                                <rect key="frame" x="155" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You approach the stage and some other concert-goers help you up while the bass player gives you a hand up. The lead singer waves you over and holds out the microphone to you. Do you take it?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HyO-rg-Owx" secondAttribute="centerX" id="Bbm-k8-vjT"/>
+                            <constraint firstAttribute="centerX" secondItem="B3u-NY-Ayy" secondAttribute="centerX" id="QDU-Li-GTY"/>
+                            <constraint firstAttribute="centerX" secondItem="NUO-UX-bVZ" secondAttribute="centerX" id="uC8-Xt-ofH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rSI-hx-UDU">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWM-Ys-iWW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="2457"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="hBt-AM-iZ7">
+            <objects>
+                <viewController id="3eO-gP-zNf" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rFw-ah-JI3"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvB-Bk-FV1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f52-j7-9ue">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q9-pJ-RQr">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEN-kx-em5">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You take the microphone..." translatesAutoresizingMaskIntoConstraints="NO" id="xpM-sE-5VI">
+                                <rect key="frame" x="155" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5Q9-pJ-RQr" secondAttribute="centerX" id="IF5-Bq-VGL"/>
+                            <constraint firstAttribute="centerX" secondItem="xpM-sE-5VI" secondAttribute="centerX" id="SYY-c6-OeW"/>
+                            <constraint firstAttribute="centerX" secondItem="aEN-kx-em5" secondAttribute="centerX" id="Xla-HG-ors"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zRR-59-MoS">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9S-Hp-UDh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3085" y="2689"/>
+        </scene>
+        <!--Story Node View Controller-->
+        <scene sceneID="TTB-rF-cip">
+            <objects>
+                <viewController id="35X-Y0-ffq" customClass="StoryNodeViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="76f-XC-xdd"/>
+                        <viewControllerLayoutGuide type="bottom" id="o9c-IX-yEs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1e-mW-zll">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suC-NE-vza">
+                                <rect key="frame" x="280" y="392" width="40" height="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su7-AE-sBY">
+                                <rect key="frame" x="270" y="442" width="61" height="30"/>
+                                <state key="normal" title="Disagree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You hesitate as she holds the mike out. People are cheering but somehow you can't raise your arm to take it." translatesAutoresizingMaskIntoConstraints="NO" id="uCp-Uh-Vsu">
+                                <rect key="frame" x="155" y="72" width="310" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uCp-Uh-Vsu" secondAttribute="centerX" id="8Ab-Cr-pyr"/>
+                            <constraint firstAttribute="centerX" secondItem="suC-NE-vza" secondAttribute="centerX" id="OpY-XX-HFD"/>
+                            <constraint firstAttribute="centerX" secondItem="Su7-AE-sBY" secondAttribute="centerX" id="gTq-Af-jBe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d40-N1-L25">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95X-4J-MFe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2351" y="3344"/>
+        </scene>
+    </scenes>
+</document>
